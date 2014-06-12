@@ -1,0 +1,371 @@
+<body>
+  <img src="./img/signup.jpg"/ id="bg">
+  <div id="overlay" class="no-overlay-img">
+<div class="content">
+  <!-- BEGIN: Login Form. -->
+  <div class="form loginForm">
+    <header>
+      <img src="./img/small.png"/>
+    </header>
+    <div class="form-wrap">
+      <p class="login-title">Login to Your<strong> CharmHost</strong> Account</p>
+      <form action="" method="post">
+        <input type="hidden" name="redir" value="">
+        <input type="hidden" name="xsrfFormToken" value="nktdIey3V31eOZ8o">
+        <fieldset>
+          <input type="text" name="email" placeholder="Email" id="email" value="">
+          <input type="password" name="password" placeholder="Password" id="password" value="">
+        </fieldset>
+        <footer>
+          <button type="submit" class="primary button large">Login</button>
+        </footer>
+        <div class="clear"></div>
+      </form>
+    </div> <!-- form-wrap -->
+  </div>
+  <!-- END: Login Form. -->
+  <div class="subLoginForm"><br>
+    <a href="" id="forgotPassword">Forgot Password?</a>
+    <span class="getStarted">Don't have an account? <a href="signup.html">Get Started</a></span>
+  </div>
+  <br>
+  <p align="center"><a href="index.html" id="forgotPassword">&#8592;&nbsp;Go back to Home</a></p>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+<style>
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+#bg {
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: 10;
+}
+body {
+margin: 0;
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+line-height: 17px;
+color: #6e6e6e;
+background-color: #f9f9fa;
+}
+div.subLoginForm .getStarted {
+float: right;
+}
+.content {
+  position: absolute;
+  -webkit-transition: top 0.5s ease;
+  -moz-transition: top 0.5s ease;
+  -ms-transition: top 0.5s ease;
+  -o-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+  top: 50%;
+  margin-top: -315px;
+  left: 50%;
+  width: 487px;
+  margin-left: -243.5px;
+}
+div.loginForm.form {
+  border: none;
+}
+div.loginForm .form-wrap {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+div.loginForm form {
+  margin: 0;
+}
+img {
+vertical-align: middle;
+border: 0;
+-ms-interpolation-mode: bicubic;
+}
+div.loginForm .login-title {
+  padding: 45px 0 0 0;
+  text-align: center;
+  font: 400 22px/1em 'Open Sans';
+  color: #252b33;
+}
+
+div.loginForm fieldset {
+  padding: 20px 42px 0px 42px;
+}
+div.loginForm fieldset:-moz-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset::-moz-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset:-ms-input-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset::-webkit-input-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset:-moz-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset::-moz-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset:-ms-input-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset::-webkit-input-placeholder {
+  color: #a0a3a6;
+}
+div.loginForm fieldset:-moz-placeholder {
+  color: #a0a3a6;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+div.loginForm fieldset:-ms-input-placeholder {
+  color: #a0a3a6;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+div.loginForm fieldset::-webkit-input-placeholder {
+  color: #a0a3a6;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+div.loginForm fieldset input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #dbd9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0px 13px;
+  margin: 0 0 20px 0;
+  color: #434343;
+  font-weight: 300;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none 3px 3px 3px #cccccc;
+  -moz-box-shadow: none 3px 3px 3px #cccccc;
+  box-shadow: none 3px 3px 3px #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.loginForm fieldset input:focus {
+  border: 1px solid #dbd9d9;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none 3px 3px 3px #cccccc;
+  -moz-box-shadow: none 3px 3px 3px #cccccc;
+  box-shadow: none 3px 3px 3px #cccccc;
+}
+div.loginForm fieldset input.error {
+  border-color: #ff3366;
+}
+
+div.loginForm footer {
+  *zoom: 1;
+  margin-top: 0px;
+  padding: 0px 42px 60px 42px;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+div.loginForm footer:before,
+div.loginForm footer:after {
+  display: table;
+  content: "";
+}
+div.loginForm footer:after {
+  clear: both;
+}
+div.loginForm footer:before,
+div.loginForm footer:after {
+  display: table;
+  content: "";
+}
+div.loginForm footer:after {
+  clear: both;
+}
+div.loginForm footer .legalNotice {
+  float: left;
+  width: 45%;
+  font-size: 11px ;
+  font-weight: 100;
+  margin-top: 8px ;
+  text-align: left;
+  color: #838585;
+}
+div.loginForm footer .legalNotice a {
+  color: #838585;
+  text-decoration: underline ;
+}
+div.loginForm footer .primary.button {
+  color: #fff;
+  background: #ff3366;
+  line-height: 1em;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none 3px 3px 3px #cccccc;
+  -moz-box-shadow: none 3px 3px 3px #cccccc;
+  box-shadow: none 3px 3px 3px #cccccc;
+  text-shadow: none ;
+  width: 100%;
+  text-transform: uppercase;
+  font: 400 16px/1em "brandon-grotesque", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+div.loginForm footer .primary.button:focus {
+  outline: none;
+}
+div.loginForm footer .primary.button.large {
+  padding: 23px 0;
+  font-size: 16px;
+}
+div.loginForm footer .primary.button:hover {
+  background: #f42156;
+}
+div.loginForm .keepMeLoggedIn {
+  display: block;
+  padding-top: 5px;
+}
+div.loginForm .keepMeLoggedIn .checker,
+div.loginForm .keepMeLoggedIn label,
+div.loginForm .keepMeLoggedIn input {
+  float: left;
+  margin: 0;
+}
+div.loginForm .keepMeLoggedIn label {
+  color: #515151;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+div.form form button.submit {
+  float: right;
+}
+div.form form .clear {
+  clear: both;
+}
+div.loginForm.form {
+  border: none;
+}
+div.loginForm header {
+  position: relative;
+  background: #323a45;
+  text-align: center;
+  padding: 30px 0 25px 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+}
+div.loginForm header:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #323a45;
+}
+
+div.subLoginForm {
+  color: #6a6f73;
+  font-size: 13px;
+  font-weight: 300;
+}
+div.subLoginForm a {
+  color: #6a6f73;
+}
+div.subLoginForm .getStarted {
+  float: right;
+}
+div.subLoginForm .getStarted a {
+  color: #ff3366;
+}
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: 20;
+background: url('./img/regi1.png');
+}
+#overlay.no-overlay-img {
+background: none;
+}
+</style>
+<script type="text/javascript">
+
+    (function() {
+
+      var form = $( "form" );
+
+      var currentAction = form.attr( "action" );
+
+      form.attr( "action", ( currentAction + location.hash ) );
+
+
+      $( "#email" )[ 0 ].focus();
+      $( "#keepMeLoggedIn" ).uniform();
+
+
+      // To help clean up the cache, we're going to flush the localStorage if the user is 
+      // explicitly logging-in. This way, if the user has been logged out (maybe by flushing
+      // cookies or timeout), then we'll make sure they don't see dirty data.
+      try {
+
+        window.localStorage.clear();
+
+      } catch ( error ) {
+
+        // Silently fail if localStorage is not supported.
+
+      }
+
+    })();
+
+  </script>
